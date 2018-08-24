@@ -3,25 +3,24 @@ import zipfile
 import optparse
 from threading import Thread
 
+# Unzipper Function
 def extractFile(zname):
     try:
-        print '1'
-        zFile = zipfile.ZipFile(zname)
-        print '2'
+        zFile = zipfile.ZipFile(zname) 
         file_info =  zFile.infolist()
-        print '3'
         filename =  file_info[0].filename
-        print '4'
         password = filename.split(".")
-        print '5'
         zFile.extractall(pwd = password[0])
-        print '6'
-        print "The file " + filename + " successfully extracted with password " + password[0]
+        print "The file " + zname + " successfully extracted with password " + password[0]
+        last_file = filename
         extractFile(filename)
-        print '7'
+        
+        
        
     except:
-        print "Did the script failed or did it decrypted ?"
+        print "Did the script failed or is it over ?" # Incase the script fails due to wrong 
+        print "Last file i was unzippign was " + zname
+    
         
 def main():
     parser = optparse.OptionParser('usage: zipcracker.py ' + '-f <zipfile>')
