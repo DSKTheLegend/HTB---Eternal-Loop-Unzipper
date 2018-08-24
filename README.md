@@ -5,6 +5,6 @@ This script unzips the current password protected zip. The password of the curre
 
 P.S. Please give a Rep  on HTB<br><br>
 <a href="https://www.hackthebox.eu/home/users/profile/3105"><img src="https://www.hackthebox.eu/badge/image/3105"></a>
-## Happy Hacking
+## Happy Hacking 
 
-##TheLegend ###Signing Out !
+### TheLegend
