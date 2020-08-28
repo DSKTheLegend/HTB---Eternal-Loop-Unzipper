@@ -18,8 +18,8 @@ def extractFile(zname):
         
        
     except:
-        print "Did the script failed or is it over ?" # Incase the script fails due to wrong 
-        print "Last file i was unzippign was " + zname
+        print "Did the script fail or is it over ?" # Incase the script fails due to wrong 
+        print "The Last file I unzipped was " + zname
     
         
 def main():
